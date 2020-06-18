@@ -1,0 +1,50 @@
+body {
+  background-color:#e6e6e6;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+.left {
+  width: 20%;
+}
+.right {
+  width: 80%;
+}
+.row:after {                /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button {
+  padding:10px 50px;
+  background-color:blue;
+  color:white;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 0.8;
+}
+img {
+  hight:400px;
+  width:220px;
+  border-radius:10px;
+}
+.heard {
+  float:right;
+  color:red;
+  font-size: 40px;
+}
+.nex {
+  background-color:#e6f7ff;
+  border:1px solid #330000;
+  hight:30px;
+  width:70%;
+  padding:0 10px;
+  margin:20px 200px;
+}
